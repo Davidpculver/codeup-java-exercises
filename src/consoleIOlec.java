@@ -12,20 +12,20 @@ public class consoleIOlec {
 
         System.out.println("Hello, " + name);
 // Scanner allows userinput in the console.Have to bring Scanner into 'being' (option+enter). To look for user input
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Hey friend-o, how's it going? ");
-//        only captures the next work: so this will only pick up the first word of the user response.
-//        .next is looking for text - grabs until next whitespace (the next 'string').
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Hey friend-o, how's it going? ");
+////        only captures the next work: so this will only pick up the first word of the user response.
+////        .next is looking for text - grabs until next whitespace (the next 'string').
+////        String userInput = scanner.next();
+////capture the entire input: grabs everything until the next return key
 //        String userInput = scanner.next();
-//capture the entire input: grabs everything until the next return key
-        String userInput = scanner.next();
-
-        System.out.printf("You're feeling: %s%n", userInput);
-
-        System.out.println("Give me a number: ");
-        int num = scanner.nextInt();
-        System.out.printf("Your number is: %d%n", num);
+//
+//        System.out.printf("You're feeling: %s%n", userInput);
+//
+//        System.out.println("Give me a number: ");
+//        int num = scanner.nextInt();
+//        System.out.printf("Your number is: %d%n", num);
 
     }
 }
