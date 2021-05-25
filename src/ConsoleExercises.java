@@ -43,11 +43,11 @@ public class ConsoleExercises {
 //        Bonus
 
         scanner.useDelimiter("\n");
-        System.out.println("Enter the length of the classroom in feet");
+        System.out.println("Enter the length, width, and height of the classroom in feet");
         String length = scanner.nextLine();
-        System.out.println("Now enter the width of the classroom.");
+//        System.out.println("Now enter the width of the classroom.");
         String width = scanner.nextLine();
-        System.out.println("Now enter the height of the classroom.");
+//        System.out.println("Now enter the height of the classroom.");
         String height = scanner.nextLine();
         float theLength = Float.parseFloat(length);
         float theWidth = Float.parseFloat(width);
