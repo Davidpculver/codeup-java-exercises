@@ -1,0 +1,106 @@
+import java.util.Scanner;
+
+public class MethodsExercises {
+
+    public static int add(int num1, int num2) {
+        return num1 + num2;
+    }
+
+    public static int subtract(int num1, int num2) {
+        return num1 - num2;
+    }
+
+    public static int multiply(int num1, int num2) {
+        return num1 * num2;
+    }
+
+//    fix later, not working correctly
+//    public static int mult(int num1, int num2){
+//        System.out.println("number 1: " + num1);
+//        System.out.println("number 2: " + num2);
+//        if(num2 == 0){
+//            System.out.println("NUMBER1: " + num1);
+//            System.out.println(num1);
+//        } else {
+//            num1 += num1;
+//            System.out.println("num 1: " + num1);
+//            System.out.println("num 2: " + num2);
+//            mult(num1, num2 - 1);
+//        }
+//        return num1;
+//    }
+
+    //    this one works.
+    public static int mult(int num1, int num2) {
+        if (num1 == 0) {
+            return 0;
+        }
+        return mult(num1 - 1, num2) + num2;
+    }
+
+
+    public static int divide(int num1, int num2) {
+        return num1 / num2;
+    }
+
+
+    //    Could not get do while loop to work.
+    public static int getInteger(int min, int max) {
+        System.out.printf("Enter a number between %d and %d: ", min, max);
+        Scanner scanner = new Scanner(System.in);
+        int userInput = scanner.nextInt();
+        if ((userInput > max) || (userInput < min)) {
+            System.out.println("You did not enter a number between min and max. Try again");
+            getInteger(min, max);
+        } else {
+            userInput = userInput;
+            System.out.printf("Great job, %d fits the range.", userInput);
+        }
+        return userInput;
+    }
+
+
+    public static void getFactorial() {
+        Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.println("Please enter a number between 1 and 10");
+            long num = scanner.nextInt();
+            long result = 1;
+            System.out.printf("%d! = ", num);
+            for (int factor = 1; factor <= num; factor++) {
+                result *= factor;
+                System.out.printf("%d ", factor);
+            }
+            System.out.println(result);
+            System.out.println("Would you like to continue? Yes/No");
+        } while (scanner.next().toLowerCase().equals("yes"));
+    }
+
+
+    public static void rollDice() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the number of sides of your dice");
+        int sides = scanner.nextInt();
+        System.out.println("Enter \"Roll\" to roll your dice.");
+        String roll = "";
+        roll = scanner.nextLine();
+        if(roll.toLowerCase().equals("roll")){
+            System.out.println("user clicked roll");
+        }
+
+    }
+
+
+    public static void main(String[] args) {
+//        System.out.println(add(2,5));
+//        System.out.println(subtract(8,3));
+//        System.out.println(multiply(4,5));
+//        System.out.println(divide(15,3));
+//        System.out.println(mult(6, 3));
+//        getInteger(1, 10);
+//        getFactorial();
+        rollDice();
+
+    }
+}
