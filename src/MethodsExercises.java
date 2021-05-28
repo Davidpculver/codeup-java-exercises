@@ -1,3 +1,5 @@
+import java.util.Locale;
+import java.util.Random;
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -79,15 +81,27 @@ public class MethodsExercises {
 
     public static void rollDice() {
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Enter the number of sides of your dice");
         int sides = scanner.nextInt();
-        System.out.println("Enter \"Roll\" to roll your dice.");
-        String roll = "";
-        roll = scanner.nextLine();
-        if(roll.toLowerCase().equals("roll")){
-            System.out.println("user clicked roll");
+        scanner.nextLine();
+        if(sides > 0){
+            System.out.printf("You have selected a %d sided dice.%n", sides);
+            System.out.println("Are you ready to roll? Y/N");
+            String roll = scanner.nextLine();
+            if(roll.toLowerCase().equals("y")){
+                Random rand = new Random();
+                int die1 = rand.nextInt(sides) + 1;
+                int die2 = rand.nextInt(sides ) + 1;
+                System.out.printf("Die1: %d%n", die1);
+                System.out.printf("Die2: %d%n", die2);
+            } else if(!roll.toLowerCase().equals("y")){
+                System.out.println("Come back when you're ready to play. Goodbye");
+            }
+        } else {
+            System.out.println("Please enter a valid positive number.");
+            rollDice();
         }
+
 
     }
 
@@ -100,7 +114,7 @@ public class MethodsExercises {
 //        System.out.println(mult(6, 3));
 //        getInteger(1, 10);
 //        getFactorial();
-        rollDice();
+//        rollDice();
 
     }
 }
