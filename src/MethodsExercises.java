@@ -140,7 +140,7 @@ public class MethodsExercises {
                     correct = true;
                 }
             } else if (!scanner.hasNextInt()){
-                System.out.println("You did not enter a number. Please restart and play the game the right way idiot.");
+                System.out.println("You did not enter a number. Restart and play the game the right way idiot.");
                 break;
             }
 
