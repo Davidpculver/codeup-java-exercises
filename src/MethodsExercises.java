@@ -68,12 +68,12 @@ public class MethodsExercises {
             System.out.println("Please enter a number between 1 and 10");
             long num = scanner.nextInt();
             long result = 1;
-            System.out.printf("%d! = ", num);
-            for (int factor = 1; factor <= num; factor++) {
+            System.out.printf("%d! = 1 ", num);
+            for (int factor = 2; factor <= num; factor++) {
                 result *= factor;
-                System.out.printf("%d ", factor);
+                System.out.printf("x %d ", factor);
             }
-            System.out.println(result);
+            System.out.println("= " + result);
             System.out.println("Would you like to continue? Yes/No");
         } while (scanner.next().toLowerCase().equals("yes"));
     }
@@ -155,8 +155,8 @@ public class MethodsExercises {
 //        System.out.println(divide(15,3));
 //        System.out.println(mult(6, 3));
 //        getInteger(1, 10);
-//        getFactorial();
+        getFactorial();
 //        rollDice();
-        guessNumber();
+//        guessNumber();
     }
 }
