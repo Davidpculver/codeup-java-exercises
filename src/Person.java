@@ -6,7 +6,7 @@ public class Person {
 
     public Person(){}
 
-    public Person(String name){
+    public Person(String name) {
         this.name = name;
     }
 
@@ -29,16 +29,27 @@ public class Person {
 //        firstPerson.setName("David");
 //        System.out.println(firstPerson.getName());
 //        firstPerson.sayHello();
-//        Person person1 = new Person();
-//        person1.setName("john");
-//        Person person2 = new Person();
-//        person2.setName("John");
+
+//        Person person1 = new Person("John");
+//        Person person2 = new Person("John");
+////        true because the values are the same
 //        System.out.println(person1.getName().equals(person2.getName()));
+////        False - in java cant compare two strings within objects
 //        System.out.println(person1 == person2);
-        Person person1 = new Person("John");
-        Person person2 = new Person("John");
-        System.out.println(person1.getName().equals(person2.getName()));
-        System.out.println(person1 == person2);
+
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        True because its equal since its defined as being the same object.
+//        System.out.println(person1 == person2);
+
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1.getName());
+//        System.out.println(person2.getName());
+//        person2.setName("Jane");
+//        System.out.println(person1.getName());
+//        System.out.println(person2.getName());
+//        Because person2 is set equal to person1, changing person2's name also impacts person1 name.
     }
 
 }
