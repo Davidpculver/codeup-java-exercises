@@ -66,7 +66,7 @@ public class MethodsExercises {
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("Please enter a number between 1 and 10");
-            long num = scanner.nextInt();
+            int num = scanner.nextInt();
             long result = 1;
             System.out.printf("%d! = 1 ", num);
             for (int factor = 2; factor <= num; factor++) {
@@ -140,7 +140,7 @@ public class MethodsExercises {
                     correct = true;
                 }
             } else if (!scanner.hasNextInt()){
-                System.out.println("You did not enter a number. Restart and play the game the right way idiot.");
+                System.out.println("You did not enter a number. Restart and play the game the right way.");
                 break;
             }
 
@@ -155,8 +155,8 @@ public class MethodsExercises {
 //        System.out.println(divide(15,3));
 //        System.out.println(mult(6, 3));
 //        getInteger(1, 10);
-        getFactorial();
-//        rollDice();
+//        getFactorial();
+        rollDice();
 //        guessNumber();
     }
 }
