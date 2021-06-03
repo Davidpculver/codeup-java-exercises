@@ -103,7 +103,7 @@ public class ArrayLec {
 // row represents each individual array
         for (char[] row : letters){
             System.out.println("+---+---+---+");
-            System.out.println("| ");
+            System.out.print("| ");
 // for each character in each array
             for (char n : row){
                 System.out.print(n + " | ");
