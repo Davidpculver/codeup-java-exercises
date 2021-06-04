@@ -42,6 +42,14 @@ public class BirdTest {
 
         Bird piratesBestFriend = new Bird();
         System.out.println(piratesBestFriend.getName());
+
+        Finch cassingFinch = new Finch("Cassing Finch", true);
+        System.out.println(cassingFinch.getName());
+
+        Duck rubberducky = new Duck();
+        rubberducky.setName("Cody");
+        System.out.println(rubberducky.getName());
+
     }
 
 }

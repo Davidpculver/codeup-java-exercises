@@ -15,4 +15,20 @@ public class Duck extends Bird {
         super.makeNoise();
         System.out.println("Quack Quack!");
     }
+
+//Dont do this, creates infinite loop.
+//    public void setName(String duckName){
+//        this.setName(duckName);
+//    }
+
+//    Instead use the setName method from Bird super class
+    public void setName(String duckName){
+//        When using protected in superclass this works:
+//        super.name = duckName
+//        But this is more secure:
+        super.setName(duckName);
+    }
+
+
+
 }

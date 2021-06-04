@@ -6,4 +6,13 @@ public class BirdShelter {
             birdsOfTheShelter[i].makeNoise();
         }
     }
+
+    boolean camerasOn;
+    boolean alarmsArmed;
+    boolean guardsAlert;
+    public final void securityProcedures(){
+        camerasOn = true;
+        alarmsArmed = true;
+        guardsAlert = true;
+    }
 }

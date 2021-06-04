@@ -14,7 +14,8 @@ public class Bird {
     }
 
     //    What kind of bird is it?
-    private String name;
+//    protected: anything within the hierarchy can access this. Not the best way to go about security.
+    protected String name;
 
     public String getName() {
         return name;
@@ -41,12 +42,7 @@ public class Bird {
         System.out.println("Flap flap");
     }
 
-    //    Need to have this default constructor. Can have it completely empty
-    public Bird(){
-        System.out.println("A bird just got created.");
-        this.canFly = true;
-        this.name = "Parrot";
-    }
+
 
 
 //    Constructor that takes in arguments.
@@ -55,7 +51,12 @@ public class Bird {
         this.canFly = itCanFly;
     }
 
-
+    //    Need to have this default constructor. Can have it completely empty
+    public Bird(){
+        System.out.println("A bird just got created.");
+        this.canFly = true;
+        this.name = "Parrot";
+    }
 
 
 }
