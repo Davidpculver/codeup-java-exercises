@@ -2,16 +2,16 @@ package KitchenApp;
 
 import java.util.Scanner;
 
-public class Refrigerator extends Appliance{
+public class Refrigerator extends Appliance implements StoreFood{
 
-    private boolean hasFreezer;
+    private boolean hasShelves;
 
-    public boolean isHasFreezer(){
-        return hasFreezer;
+    public boolean isHasShelves(){
+        return hasShelves;
     }
 
-    public void setHasFreezer(boolean hasFreezer) {
-        this.hasFreezer = hasFreezer;
+    public void setHasShelves(boolean hasShelves) {
+        this.hasShelves = hasShelves;
     }
 
 //    still have access to type because we are extending from Appliance class. Implementing
@@ -23,9 +23,13 @@ public class Refrigerator extends Appliance{
         this.brandName = brandName;
     }
 
-    public Refrigerator(String type, String brandName, boolean hasFreezer){
+    public Refrigerator(String type, String brandName, boolean hasShelves){
         super(type, brandName);
-        this.hasFreezer = hasFreezer;
+        this.hasShelves = hasShelves;
+    }
+
+    public Refrigerator(String type, String brandName){
+        super(type, brandName);
     }
 
     public void keepFresh(){

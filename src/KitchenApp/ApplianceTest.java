@@ -20,9 +20,14 @@ public class ApplianceTest {
         Refrigerator app2 = new Refrigerator("two door fridge", "LG", true);
         System.out.println(app2.brandName);
         System.out.println(app2.type);
-        System.out.println(app2.isHasFreezer());
+        System.out.println(app2.isHasShelves());
         app2.keepFresh();
 
+        IceChest chest = new IceChest();
+        chest.keepFresh();
 
+//Can still access brandname because it is accessed from Appliance - can cause some issues, but possible.
+        MiniFridge mini = new MiniFridge("One door", "Samsung");
+        System.out.println(mini.brandName);
     }
 }
