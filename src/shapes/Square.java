@@ -36,6 +36,13 @@ package shapes;
 
 public class Square extends Quadrilateral {
 
+    protected int side;
+
+    public Square(int side){
+        super(side, side);
+        this.side = side;
+    }
+
     public int setLength(int length){
         this.length = length;
         return length;
@@ -49,12 +56,12 @@ public class Square extends Quadrilateral {
 
     @Override
     public double getPerimeter() {
-        return (2 * length) + (2 * width);
+        return side * 4;
     }
 
     @Override
     public double getArea() {
-        return length * width;
+        return side * side;
     }
 }
 

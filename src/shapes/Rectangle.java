@@ -27,6 +27,13 @@ public class Rectangle extends Quadrilateral implements Measurable {
 
     //    ABSTRACT / INTERFACES
 
+
+    public Rectangle(int length, int width) {
+        super(length, width);
+        this.length = length;
+        this.width = width;
+    }
+
     public double getPerimeter() {
         return (2 * length) + (2 * width);
     }
@@ -36,15 +43,23 @@ public class Rectangle extends Quadrilateral implements Measurable {
         return length * width;
     }
 
+    @Override
+    public int getLength() {
+        return super.getLength();
+    }
 
+    @Override
     public int setLength(int length) {
-        this.length = length;
         return length;
     }
 
+    @Override
+    public int getWidth() {
+        return super.getWidth();
+    }
 
+    @Override
     public int setWidth(int width) {
-        this.width = width;
         return width;
     }
 }

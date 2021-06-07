@@ -15,8 +15,10 @@ public class ShapesTest {
 
 //        ABSTRACT / INTERFACES
 
-Measurable myShape = new Rectangle();
-myShape.getPerimeter();
-
+//        Measurable myShape = new Square(5);
+        Measurable myShape = new Rectangle(5, 5);
+        System.out.println("MyShape area = " + myShape.getArea());
+        System.out.println("MyShape perim = " + myShape.getPerimeter());
+//        System.out.println(myShape.getLength());  // this works if create new Rectangle from Rectangle class, but not Measurable
     }
 }
