@@ -1,6 +1,6 @@
 package shapes;
 
-//public class Square extends Rectangle {
+public class Square extends Rectangle {
 
 
 //    POLY EXERCISE
@@ -33,36 +33,66 @@ package shapes;
 
 //}
 
+//MY SOLUTION
+//public class Square extends Quadrilateral {
+//
+//    protected int side;
+//
+//    public Square(int side){
+//        super(side, side);
+//        this.side = side;
+//    }
+//
+//    public int setLength(int length){
+//        this.length = length;
+//        return length;
+//    }
+//
+//    public int setWidth(int width){
+//        this.width = width;
+//        return width;
+//    }
+//
+//
+//    @Override
+//    public double getPerimeter() {
+//        return side * 4;
+//    }
+//
+//    @Override
+//    public double getArea() {
+//        return side * side;
+//    }
 
-public class Square extends Quadrilateral {
+//INSTRUCTOR EXAMPLE
 
-    protected int side;
-
-    public Square(int side){
+    public Square(double side) {
         super(side, side);
-        this.side = side;
     }
-
-    public int setLength(int length){
-        this.length = length;
-        return length;
-    }
-
-    public int setWidth(int width){
-        this.width = width;
-        return width;
-    }
-
 
     @Override
     public double getPerimeter() {
-        return side * 4;
+        return 4 * length;
     }
 
     @Override
     public double getArea() {
-        return side * side;
+        return length * width;
     }
+
+    @Override
+    public void setLength(double length) {
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    public void setWidth(double width) {
+        this.width = width;
+        this.length = width;
+    }
+
+
 }
 
 
