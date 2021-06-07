@@ -6,18 +6,22 @@ public class Student {
     private String name;
     private ArrayList<Integer> grades;
 
-    public Student(String name, int grade) {
+    public Student(String name) {
         this.name = name;
         this.grades = new ArrayList<>();
-        addGrade(grade);
     }
 
     public String getName(){
         return name;
     }
 
+
     public void addGrade(int grade){
         grades.add(grade);
+    }
+
+    public ArrayList<Integer> getGrades() {
+        return grades;
     }
 
     public double getGradeAverage(ArrayList<Integer> grades){
@@ -31,14 +35,22 @@ public class Student {
 
 
     public static void main(String[] args) {
-        Student student1 = new Student("David", 45);
-//        System.out.println(student1.grades);
+        Student student1 = new Student("David");
         student1.addGrade(55);
         student1.addGrade(80);
         student1.addGrade(100);
-//        System.out.println(student1.grades);
         System.out.printf("Student %s has grades of %s%n" ,student1.getName(), student1.grades);
-        System.out.printf("%s's grade average: %s", student1.getName(),student1.getGradeAverage(student1.grades));
+        System.out.printf("%s's grade average: %s%n", student1.getName(),student1.getGradeAverage(student1.grades));
+
+        Student student2 = new Student("Jim");
+        student2.addGrade(85);
+        student2.addGrade(90);
+        student2.addGrade(60);
+        System.out.printf("Student %s has grades of %s%n" ,student2.getName(), student2.grades);
+        System.out.printf("%s's grade average: %s", student2.getName(),student2.getGradeAverage(student2.grades));
+
+
+
     }
 
 
