@@ -15,7 +15,8 @@ public class ShapesTest {
 
 //        ABSTRACT / INTERFACES
 
-
+Measurable myShape = new Rectangle();
+myShape.getPerimeter();
 
     }
 }
