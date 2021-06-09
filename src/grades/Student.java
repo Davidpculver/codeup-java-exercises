@@ -24,20 +24,20 @@ public class Student {
         return grades;
     }
 
-    public double getGradeAverage(ArrayList<Integer> grades){
-        double sum = 0;
-        for(Integer grade : grades){
-            sum += grade;
-        }
-        return sum / grades.size();
-    }
+//    public double getGradeAverage(ArrayList<Integer> grades){
+//        double sum = 0;
+//        for(Integer grade : grades){
+//            sum += grade;
+//        }
+//        return sum / grades.size();
+//    }
 
     public double getGradeAverage(){
         double sum = 0;
-        for(Integer grade : grades){
+        for(Integer grade : this.grades){
             sum += grade;
         }
-        return sum / grades.size();
+        return sum / this.grades.size();
     }
 
 
@@ -47,14 +47,14 @@ public class Student {
         student1.addGrade(80);
         student1.addGrade(100);
         System.out.printf("Student %s has grades of %s%n" ,student1.getName(), student1.grades);
-        System.out.printf("%s's grade average: %s%n", student1.getName(),student1.getGradeAverage(student1.grades));
+        System.out.printf("%s's grade average: %s%n", student1.getName(),student1.getGradeAverage());
 
         Student student2 = new Student("Jim");
         student2.addGrade(85);
         student2.addGrade(90);
         student2.addGrade(60);
         System.out.printf("Student %s has grades of %s%n" ,student2.getName(), student2.grades);
-        System.out.printf("%s's grade average: %s", student2.getName(),student2.getGradeAverage(student2.grades));
+        System.out.printf("%s's grade average: %s", student2.getName(),student2.getGradeAverage());
 
 
 

@@ -27,20 +27,20 @@ public class GradesApplication {
         students.put("Tim Tight Pants", student3);
 
         Student student4 = new Student("Ms Sparkle");
-        student4.addGrade(33);
-        student4.addGrade(51);
-        student4.addGrade(62);
+        student4.addGrade(100);
+        student4.addGrade(99);
+        student4.addGrade(98);
         students.put("Yo momma", student4);
 
 //        System.out.println(students.get("Chili dog").getName());
-//        System.out.println(student1.getGradeAverage(student1.getGrades()));
+//        System.out.println(student1.getGradeAverage());
 //        System.out.println(students.get("B-diddy").getName());
-//        System.out.println(student1.getGradeAverage(student2.getGrades()));
+//        System.out.println(student2.getGradeAverage());
 //        System.out.println(students.get("Tim Tight Pants").getName());
-//        System.out.println(student1.getGradeAverage(student3.getGrades()));
-        System.out.println(students.get("Yo momma").getName());
-        System.out.println(student4.getGradeAverage(student4.getGrades()));
-        System.out.println(students.get("B-diddy").getGradeAverage());
+//        System.out.println(student3.getGradeAverage());
+//        System.out.println(students.get("Yo momma").getName());
+//        System.out.println(student4.getGradeAverage());
+//        System.out.println(students.get("B-diddy").getGradeAverage());
 
 
 //       Prints the "array" of keys
@@ -57,11 +57,11 @@ public class GradesApplication {
 
 
         String userInput;
-        boolean response;
+//        boolean response;
         Scanner scanner = new Scanner(System.in);
 
         do{
-            response = true;
+//            response = true;
             System.out.println("\nWhat student would you like to see more information on?\n");
             userInput = scanner.nextLine();
             if(!students.containsKey(userInput)){
@@ -75,7 +75,7 @@ public class GradesApplication {
                 }
             } else{
 //                Unable to access getGradAverage. However, able to print out getGrades.
-                System.out.println("Name: " + students.get(userInput).getName() + " - GitHub Username: " + userInput + "\nCurrent average: " + students.get("B-diddy").getGradeAverage() + "\n");
+                System.out.println("Name: " + students.get(userInput).getName() + " - GitHub Username: " + userInput + "\nCurrent average: " + students.get(userInput).getGradeAverage() + "\n");
             }
             System.out.println("Would you like to see another student?");
             userInput = scanner.nextLine();
@@ -86,6 +86,6 @@ public class GradesApplication {
                 System.out.println("Goodbye, and have a wonderful day!");
                 break;
             }
-        } while (response = true);
+        } while (true);
     }
 }

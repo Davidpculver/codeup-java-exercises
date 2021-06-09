@@ -78,6 +78,8 @@ public class Person {
         this.name = name;
     }
 
+public Person (){};
+
 
     public static void main(String[] args){
 //        Create new Person object
