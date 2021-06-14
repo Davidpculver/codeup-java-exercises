@@ -170,23 +170,23 @@ public class ControlFlowExercises {
 
 
 //       instructor example (it does not run again when you enter y)
-//        System.out.println("What number would you like to go up to?");
-//        boolean userWantsToContinue = false;
-//        do{
-//            int userInput = scanner.nextInt();
-//            System.out.println("Here is your table!");
-//            System.out.println("");
-//            System.out.println("number | squared | cubed");
-//            System.out.println("------ | ------- | ------");
-//            for(int i = 1; i <= userInput; i++){
-//                System.out.printf("%-7d| %-8d| %-5d%n", i, i*i, i * i * i);
-//            }
-//            System.out.println("Enter another number? y/n");
-//            String userAnswer = scanner.next();
-//            if(userAnswer.equals("y")){
-//                userWantsToContinue = true;
-//            }
-//        } while (userWantsToContinue == true);
+        System.out.println("What number would you like to go up to?");
+        boolean userWantsToContinue = false;
+        do{
+            int userInput = scanner.nextInt();
+            System.out.println("Here is your table!");
+            System.out.println("");
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------- | ------");
+            for(int i = 1; i <= userInput; i++){
+                System.out.printf("%-7d| %-8d| %-5d%n", i, i*i, i * i * i);
+            }
+            System.out.println("Enter another number? y/n");
+            String userAnswer = scanner.next();
+            if(userAnswer.equals("y")){
+                userWantsToContinue = true;
+            }
+        } while (userWantsToContinue == true);
 
 
 
@@ -213,26 +213,26 @@ public class ControlFlowExercises {
 //        } while (scanner.next().toLowerCase().equals("yes"));
 
 //        instructor example
-        String userChoice = "y";
-        while(!userChoice.equals("n")){
-            System.out.println("Enter the student's numerical grade: ");
-            byte grade = scanner.nextByte();
-            char letterGrade;
-            if(grade > 0 && grade <= 59){
-                letterGrade = 'F';
-            } else if (grade > 59 && grade <= 66){
-                letterGrade = 'D';
-            } else if (grade > 66 && grade <= 79){
-                letterGrade = 'C';
-            } else if (grade > 79 && grade <= 87){
-                letterGrade = 'B';
-            } else {
-                letterGrade = 'A';
-            }
-            System.out.println("Letter grade is: " + letterGrade);
-            System.out.println("Would you like to enter another grade? (y/n)");
-            userChoice = scanner.next();
-        }
+//        String userChoice = "y";
+//        while(!userChoice.equals("n")){
+//            System.out.println("Enter the student's numerical grade: ");
+//            byte grade = scanner.nextByte();
+//            char letterGrade;
+//            if(grade > 0 && grade <= 59){
+//                letterGrade = 'F';
+//            } else if (grade > 59 && grade <= 66){
+//                letterGrade = 'D';
+//            } else if (grade > 66 && grade <= 79){
+//                letterGrade = 'C';
+//            } else if (grade > 79 && grade <= 87){
+//                letterGrade = 'B';
+//            } else {
+//                letterGrade = 'A';
+//            }
+//            System.out.println("Letter grade is: " + letterGrade);
+//            System.out.println("Would you like to enter another grade? (y/n)");
+//            userChoice = scanner.next();
+//        }
 
 
     }
