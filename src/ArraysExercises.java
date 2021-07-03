@@ -35,6 +35,9 @@ public class ArraysExercises{
         Person fourthPerson = new Person("Steve");
         people = addPerson(people, fourthPerson);
 
+        Person fifthPerson = new Person("Homie");
+        people = addPerson(people, fifthPerson);
+
         for(Person person : people){
 //        Utilizing the getName() method from Person class
             System.out.println(person.getName());

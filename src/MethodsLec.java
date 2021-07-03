@@ -68,15 +68,16 @@ public class MethodsLec {
 //    Methods in Java are just "functions", set up like in javascript
     public static void main(String[] args) {
 //        Have to call the methods from above to run
-        sayHello("David");
-        sayHello("Howdy", "David");
-        sayHello();
-        sayHello(5);
-//        Have to sout the multiply because we are getting back an integer value that we could use outside of the sout
-        System.out.println(multiply(5,2));
-        int product = multiply(7,3);
-        System.out.printf("Did you know %d X %d ='s %d?%n", product, product, product * product);
-        willYouTakeUstToSplashmore(new Scanner(System.in));
-        bottlesOfBlank("beer", 80);
+//        sayHello("David");
+//        sayHello("Howdy", "David");
+//        sayHello();
+//        sayHello(5);
+////        Have to sout the multiply because we are getting back an integer value that we could use outside of the sout
+//        System.out.println(multiply(5,2));
+//        int product = multiply(7,3);
+//        System.out.printf("Did you know %d X %d ='s %d?%n", product, product, product * product);
+//        willYouTakeUstToSplashmore(new Scanner(System.in));
+//        bottlesOfBlank("beer", 80);
+
     }
 }

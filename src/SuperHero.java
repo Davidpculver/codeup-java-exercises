@@ -9,9 +9,16 @@ public class SuperHero extends Person{
         super(name);
     }
 
-    public SuperHero(String name, String secretIdentity) {
-        super(name);
-        this.name = name;
-    }
+//    public SuperHero(String name, String secretIdentity) {
+//        super(name);
+//        this.secretIdentity = secretIdentity;
+//    }
+
+//    public static void main(String[] args) {
+////        SuperHero d = new SuperHero("David", "Paul");
+//        System.out.println(d.getName());
+//        d.setName("bob");
+//        System.out.println(d.getName());
+//    }
 
 }
