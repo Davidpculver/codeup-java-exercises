@@ -89,7 +89,7 @@ public Person (){};
         p.setName("Roger");
         System.out.println(p.getName());
         p.sayHello();
-        p.setName("Tim");
+        p.setName("Bryan");
         System.out.println(p.getName());
 
     }
