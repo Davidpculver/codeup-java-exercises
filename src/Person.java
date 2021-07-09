@@ -92,6 +92,7 @@ public Person (){};
         p.setName("Bryan");
         System.out.println(p.getName());
         p.sayHello();
+        System.out.println(p.getName());
 
     }
 
