@@ -16,12 +16,13 @@ public class BirdTest {
 //        Constructor
 //        declare reference variable (lives in the 'stack'); new = assignment operator creates the object calls the default constructor ( looks like: public Bird(){} ) has no return type because it returns the object; assigns the new object (lives in the 'heap').
         Duck mallard = new Duck();
-        mallard.setName("Mallard");
+//        mallard.setName("Mallard");
         mallard.makeNoise();
 
-        Finch goldFinch = new Finch();
+        Bird goldFinch = new Finch();
         goldFinch.setName("Gold Finch");
         goldFinch.makeNoise();
+        System.out.println("My nane is: " + goldFinch.getName());
 
         Penguin penguin = new Penguin();
 //        Still using inherited setName method. the name lives inside the Bird object
