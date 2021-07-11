@@ -22,12 +22,15 @@ public class Fruit implements Food{
         return this.flavor;
     }
 
+    public Fruit(String flavor) {
+        this.flavor = flavor;
+    }
 
     public static void main(String[] args) {
-        Fruit lime = new Fruit();
+        Fruit lime = new Fruit("Sweet");
 //      will give warning since its Deprecated
 //        lime.tasteBitter();
-        lime.flavor = "sour";
+//        lime.flavor = "sour";
         System.out.println(lime.taste());
 
 
