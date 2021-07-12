@@ -84,6 +84,7 @@ public class User {
         System.out.println("User2 Password: " + user2.password);
         System.out.println("User2 Email: " + user2.email);
         System.out.println(user2.getPassword());
+        System.out.println(testUser.getUsername());
 
     }
 
