@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArraysExercises{
@@ -44,6 +45,29 @@ public class ArraysExercises{
         }
 
 
+        ArrayList<String> colors = new ArrayList<>();
+        colors.add("red");
+        colors.add("blue");
+
+        System.out.println(colors);
+
+        for (String color : colors) {
+            System.out.println(color);
+        }
+
+        colors.add(0, "yellow");
+
+        for (String color : colors) {
+            System.out.println(color);
+        }
+
+        Integer selectedColor = colors.indexOf("blue");
+        System.out.println(selectedColor);
+        String selected = colors.get(1);
+        System.out.println(selected);
+
+        colors.remove(colors.toArray().length - 1);
+        System.out.println(colors);
 
 
     }
